@@ -40,7 +40,7 @@ Module Program
 
     Function isValid(preamble As Integer, input As List(Of Long), indexToTest As Integer)
 
-        For i = indexToTest - (preamble) To indexToTest - 1
+        For i = indexToTest - preamble To indexToTest - 1
             For j = i + 1 To indexToTest - 1
                 If input(i) + input(j) = input(indexToTest) Then Return True
             Next
